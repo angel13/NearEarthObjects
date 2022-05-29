@@ -1,0 +1,17 @@
+test_approach_distance_is_float (tests.test_extract.TestLoadApproaches) ... ok
+test_approach_time_is_datetime (tests.test_extract.TestLoadApproaches) ... ok
+test_approach_velocity_is_float (tests.test_extract.TestLoadApproaches) ... ok
+test_approaches_are_collection (tests.test_extract.TestLoadApproaches) ... ok
+test_approaches_contain_all_elements (tests.test_extract.TestLoadApproaches) ... ok
+test_approaches_contain_close_approaches (tests.test_extract.TestLoadApproaches) ... ok
+test_adonis_is_potentially_hazardous (tests.test_extract.TestLoadNEOs) ... ok
+test_asclepius_has_name_no_diameter (tests.test_extract.TestLoadNEOs) ... ok
+test_neos_are_collection (tests.test_extract.TestLoadNEOs) ... ok
+test_neos_contain_2019_SC8_no_name_no_diameter (tests.test_extract.TestLoadNEOs) ... ok
+test_neos_contain_all_elements (tests.test_extract.TestLoadNEOs) ... ok
+test_neos_contain_near_earth_objects (tests.test_extract.TestLoadNEOs) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.252s
+
+OK
