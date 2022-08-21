@@ -78,8 +78,6 @@ def load_approaches(json_path):
         #des_idx = fields.index('des')
         
         
-        
-        
         i = 0
         for appr in approaches_data:
            

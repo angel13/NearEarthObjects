@@ -82,6 +82,8 @@ class NearEarthObject:
         # TODO: Use self.designation and self.name to build a fullname for this object.
         return f'{self.designation } {self.name}'
     
+  
+    
 
     def __str__(self):
         """Return `str(self)`."""
@@ -97,8 +99,6 @@ class NearEarthObject:
         return f"NearEarthObject+++(designation={self.designation!r}, name={self.name!r}, " \
                f"diameter={self.diameter:.3f}, hazardous={self.hazardous!r})"
     
-
-
 class CloseApproach:
     """A close approach to Earth by an NEO.
 

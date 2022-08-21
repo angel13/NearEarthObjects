@@ -33,15 +33,12 @@ def write_to_csv(results, filename):
     with open(filename, 'w') as outfile:
         writer = csv.DictWriter(outfile, fieldnames)
         writer.writeheader()
+        name = ''
+        diameter = ''
         for result in results:
-
-            if result.neo.name == None or result.neo.name == '':
-                name = ''
-            else:
+            if result.neo.name != None and result.neo.name != '':
                 name = str(result.neo.name)
-            if result.neo.diameter == None or result.neo.diameter == '':
-                diameter = 'nan'
-            else:
+            if result.neo.diameter != None and result.neo.diameter != '':
                 diameter = float(result.neo.diameter)
 
             writer.writerow({
@@ -67,15 +64,13 @@ def write_to_json(results, filename):
     """
     # Write the results to a JSON file, following the specification in the instructions.
     results_list = []
+    name = ''
+    diameter = ''
     with open(filename, 'w') as outfile:
         for result in results:
-            if result.neo.name is None or result.neo.name == '':
-                name = ''
-            else:
+            if result.neo.name != None and result.neo.name != '':
                 name = str(result.neo.name)
-            if result.neo.diameter is None or result.neo.diameter == '':
-                diameter = 'NaN'
-            # else:
+            if result.neo.diameter != None and result.neo.diameter != '':
                 diameter = float(result.neo.diameter)
             results_dict = {
                 'datetime_utc': datetime_to_str(result.time),
