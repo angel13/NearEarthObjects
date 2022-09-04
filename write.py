@@ -38,9 +38,9 @@ def write_to_csv(results, filename):
         name = ''
         diameter = ''
         for result in results:
-            if result.neo.name != None and result.neo.name != '':
+            if result.neo.name is not None and result.neo.name != '':
                 name = str(result.neo.name)
-            if result.neo.diameter != None and result.neo.diameter != '':
+            if result.neo.diameter is not None and result.neo.diameter != '':
                 diameter = float(result.neo.diameter)
 
             writer.writerow({
@@ -52,6 +52,7 @@ def write_to_csv(results, filename):
                 'diameter_km': diameter,
                 'potentially_hazardous': bool(result.neo.hazardous)
             })
+
 
 def write_to_json(results, filename):
     """Write an iterable of `CloseApproach` objects to a JSON file.
@@ -72,9 +73,9 @@ def write_to_json(results, filename):
     diameter = ''
     with open(filename, 'w') as outfile:
         for result in results:
-            if result.neo.name != None and result.neo.name != '':
+            if result.neo.name is not None and result.neo.name != '':
                 name = str(result.neo.name)
-            if result.neo.diameter != None and result.neo.diameter != '':
+            if result.neo.diameter is not None and result.neo.diameter != '':
                 diameter = float(result.neo.diameter)
             results_dict = {
                 'datetime_utc': datetime_to_str(result.time),
