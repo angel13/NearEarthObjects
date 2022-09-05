@@ -26,7 +26,7 @@ def load_neos(csv_path):
     near-Earth objects.
     :return: A collection of `NearEarthObject`s.
     """
-    # TODO: Load NEO data from the given CSV file.
+    # Load NEO data from the given CSV file.
     neos1 = []
     with open(csv_path, 'r') as infile:
         reader = csv.DictReader(infile)

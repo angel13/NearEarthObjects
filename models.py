@@ -126,7 +126,7 @@ class CloseApproach:
         :param info: A dictionary of excess keyword arguments supplied to the
         constructor.
         """
-        # TODO: Assign information from the arguments passed to the constructor
+        # Assign information from the arguments passed to the constructor
         # onto attributes named `_designation`, `time`, `distance`, and`
         # velocity`.
         # You should coerce these values to their appropriate data type and
